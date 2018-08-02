@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension UITableView {
+public extension UITableView {
     var swipeCells: [SwipeTableViewCell] {
         return visibleCells.flatMap({ $0 as? SwipeTableViewCell })
     }
@@ -17,7 +17,7 @@ extension UITableView {
     }
 }
 
-extension UICollectionView {
+public extension UICollectionView {
     var swipeCells: [SwipeCollectionViewCell] {
         return visibleCells as? [SwipeCollectionViewCell] ?? []
     }
